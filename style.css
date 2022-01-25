@@ -1,0 +1,62 @@
+/* Carousel Edit */
+.carousel-caption{
+    background: rgba(0, 0, 0, .4);
+    border-radius: 15px;
+}
+
+.carousel-caption button{
+    background-color: #3864AC;
+    color: white;
+    border: white;
+    box-shadow: inset 0 0 0 0 yellow;
+    transition: ease-out 0.3s;
+}
+
+.carousel-caption button:hover{
+    box-shadow: inset 100px 0 0 0 yellow;
+    color: black;
+}
+/* End Carousel Edit */
+
+/* Sarana dan Akomodasi Card */
+.card-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #c5c5c5;
+    margin-bottom: 30px;
+    float: left;
+    border-radius: 5px;
+}
+
+.card-box .card-thumbnail {
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-box .d-grid a {
+    color: white;
+}
+
+.col-md-6 .card-box p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+/* End Sarana dan Akomodasi Card */
+
+/* Panjang Max Teks Objek Wisata dan Wawasan*/
+.col-md-6 p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+/* End Panjang Max Teks Objek Wisata dan Wawasan*/

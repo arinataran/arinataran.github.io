@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+
+  <!-- JQuery UI -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+  <!-- Menghubungkan ke CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="icon" href="./image/BS Title Icon.png">
+  <title>Objek Wisata Bajra Sandhi</title>
+
+</head>
+
+<body>
+
+  <div class="container-fulid">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3864AC;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./image/Logo Monumen Bajra Sandhi.png" alt="" width="auto" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="objek_wisata.html">Objek Wisata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sarana_akomodasi.html">Sarana dan Akomodasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wawasan.html">Wawasan</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="" placeholder="Cari..." aria-label="">
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="modal"
+              data-bs-target="#cariModal">Cari</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cari Modal -->
+    <div class="modal fade" id="cariModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="cariModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cariModalLabel">Cari Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Anda telah menekan tombol "Cari".
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Oke!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Navbar -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/mbs1-bg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-2">Monumen Bajra Sandhi</h2>
+            <p>Objek wisata Monumen Bajra Sandhi, adalah sebuah monumen yang berada di jantung kota Denpasar, tempatnya
+              berada di daerah Renon.
+              Kemudian, monumen ini dibangun dan di dedikasikan untuk perjuangan rakyat pulau Bali.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#ytModal2">Video</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/mbs2-bg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-2">Monumen Bajra Sandhi</h2>
+            <p>Objek wisata Monumen Bajra Sandhi, adalah sebuah monumen yang berada di jantung kota Denpasar, tempatnya
+              berada di daerah Renon.
+              Kemudian, monumen ini dibangun dan di dedikasikan untuk perjuangan rakyat pulau Bali.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#ytModal2">Video</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/mbs3-bg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-2">Monumen Bajra Sandhi</h2>
+            <p>Objek wisata Monumen Bajra Sandhi, adalah sebuah monumen yang berada di jantung kota Denpasar, tempatnya
+              berada di daerah Renon.
+              Kemudian, monumen ini dibangun dan di dedikasikan untuk perjuangan rakyat pulau Bali.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#ytModal">Jelajahi</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+              data-bs-target="#ytModal2">Video</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- YT Video-->
+    <!-- Modal -->
+    <div class="modal fade" id="ytModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ytModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title" id="ytModalLabel">Jelajahi Monumen Bajra Sandhi</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <iframe width="1000" height="475" src="https://www.youtube.com/embed/dtFhI0ivXNk"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-
+                media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End YT Video-->
+
+    <!-- YT Video 2-->
+    <!-- Modal -->
+    <div class="modal fade" id="ytModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="ytModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h3 class="modal-title" id="ytModalLabel2">Video Monumen Bajra Sandhi</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" align="center">
+            <iframe width="1000" height="475" src="https://www.youtube.com/embed/qD1_tuZlpL0"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-
+                media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End YT Video 2-->
+
+    <!-- End Carousel -->
+
+    <br>
+
+    <!-- Objek Wisata -->
+    <div class="container">
+      <p id="objek_wisata" class="h2" align="center">Objek Wisata</p>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Museum Monumen Perjuangan Rakyat Bali</h4>
+          <p class="lead">Monumen Bajra Sandhi atau disebut juga Monumen Perjuangan
+            Rakyat Bali adalah monumen perjuangan rakyat Bali yang terletak di Renon,
+            Kota Denpasar, Bali. Monumen ini menempati areal yang sangat luas, ada
+            beberapa lapangan bola di sekelili...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata1">Selengkapnya</button>
+          <p> </p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/pages/Monumen%20Bajra%20Sandhi%20Renon/520896174629411/"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCxACHZYQD0PHp8Z8dsUYVLw" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+          <p> </p>
+        </div>
+
+        <div class="col-md-6">
+          <img src="./image/wisata1.jpg" class="rounded float-right img-fluid" width="537px">
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./image/wisata2.jpg" class="rounded float-right img-fluid" width="537px">
+        </div>
+
+        <div class="col-md-6">
+          <h4>Lapangan Puputan Margarana Renon</h4>
+          <p class="lead">Tempat wisata sejarah di bali yang satu ini merupakan
+            sebuah tempat yang juga cukup bersejarah di kawasan bali. Tempat yang
+            berada di daerah Denpasar ini memang merupakan sebuah tempat kebanggaan
+            masyarakat Bali. Lokasi ini sering sekali dik...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata2">Selengkapnya</button>
+          <p> </p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/pages/Monumen%20Bajra%20Sandhi%20Renon/520896174629411/"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCxACHZYQD0PHp8Z8dsUYVLw" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Museum Monumen Perjuangan Rakyat Bali</h4>
+          <p class="lead">Monumen Bajra Sandhi atau disebut juga Monumen Perjuangan
+            Rakyat Bali adalah monumen perjuangan rakyat Bali yang terletak di Renon,
+            Kota Denpasar, Bali. Monumen ini menempati areal yang sangat luas, ada
+            beberapa lapangan bola di sekelili...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata1">Selengkapnya</button>
+          <p> </p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/pages/Monumen%20Bajra%20Sandhi%20Renon/520896174629411/"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCxACHZYQD0PHp8Z8dsUYVLw" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+          <p> </p>
+        </div>
+
+        <div class="col-md-6">
+          <img src="./image/wisata1.jpg" class="rounded float-right img-fluid" width="537px">
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./image/wisata2.jpg" class="rounded float-right img-fluid" width="537px">
+        </div>
+
+        <div class="col-md-6">
+          <h4>Lapangan Puputan Margarana Renon</h4>
+          <p class="lead">Tempat wisata sejarah di bali yang satu ini merupakan
+            sebuah tempat yang juga cukup bersejarah di kawasan bali. Tempat yang
+            berada di daerah Denpasar ini memang merupakan sebuah tempat kebanggaan
+            masyarakat Bali. Lokasi ini sering sekali dik...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata2">Selengkapnya</button>
+          <p> </p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/pages/Monumen%20Bajra%20Sandhi%20Renon/520896174629411/"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCxACHZYQD0PHp8Z8dsUYVLw" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Museum Monumen Perjuangan Rakyat Bali</h4>
+          <p class="lead">Monumen Bajra Sandhi atau disebut juga Monumen Perjuangan
+            Rakyat Bali adalah monumen perjuangan rakyat Bali yang terletak di Renon,
+            Kota Denpasar, Bali. Monumen ini menempati areal yang sangat luas, ada
+            beberapa lapangan bola di sekelili...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata1">Selengkapnya</button>
+          <p> </p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/pages/Monumen%20Bajra%20Sandhi%20Renon/520896174629411/"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCxACHZYQD0PHp8Z8dsUYVLw" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+          <p> </p>
+        </div>
+
+        <div class="col-md-6">
+          <img src="./image/wisata1.jpg" class="rounded float-right img-fluid" width="537px">
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./image/wisata2.jpg" class="rounded float-right img-fluid" width="537px">
+        </div>
+
+        <div class="col-md-6">
+          <h4>Lapangan Puputan Margarana Renon</h4>
+          <p class="lead">Tempat wisata sejarah di bali yang satu ini merupakan
+            sebuah tempat yang juga cukup bersejarah di kawasan bali. Tempat yang
+            berada di daerah Denpasar ini memang merupakan sebuah tempat kebanggaan
+            masyarakat Bali. Lokasi ini sering sekali dik...</p>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#wisata2">Selengkapnya</button>
+          <p></p>
+          <h5>Sosial Media Kami</h5>
+          <!-- <a href="https://wa.me/6281355538777" class="btn btn-success"><span class="bi-whatsapp"></span> WhatsApp</a> -->
+          <a href="https://web.facebook.com/pages/Monumen%20Bajra%20Sandhi%20Renon/520896174629411/"
+            class="btn btn-primary"><span class="bi-facebook"></span> Facebook</a>
+          <a href="https://www.youtube.com/channel/UCxACHZYQD0PHp8Z8dsUYVLw" class="btn btn-danger"><span
+              class="bi-youtube"></span> Youtube</a>
+          <p> </p>
+        </div>
+      </div>
+
+      <p> </p>
+
+      <hr>
+
+    </div>
+
+    <!-- Objek Wisata Modal -->
+    <div class="modal fade" id="wisata1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="wisata1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="wisata1Label">Museum Monumen Perjuangan Rakyat Bali</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/wisata1.jpg" title="Museum Monumen Perjuangan Rakyat Bali" class="img-fluid">
+            <hr>
+            <p>Monumen Bajra Sandhi atau disebut juga Monumen Perjuangan Rakyat Bali adalah monumen perjuangan rakyat
+              Bali yang terletak di Renon, Kota Denpasar, Bali. Monumen ini menempati areal yang sangat luas, ada
+              beberapa lapangan bola di sekelilingnya.</p>
+            <p>Monumen Bajra Sandhi merupakan Monumen Perjuangan Rakyat Bali untuk memberi hormat pada para pahlawan
+              serta merupakan lambang pesemaian pelestarian jiwa perjuangan rakyat Bali dari generasi ke generasi dan
+              dari zaman ke zaman serta lambang semangat untuk mempertahankan keutuhan Negara Kesatuan Republik
+              Indonesia. Hal ini dapat dilihat dari 17 anak tangga yang ada di pintu utama, 8 buah tiang agung di dalam
+              gedung monumen, dan monumen yang menjulang setinggi 45 meter. Lokasi monumen ini terletak di depan Kantor
+              Gubernur Kepala Daerah Provinsi Bali yang juga di depan Gedung DPRD Provinsi Bali Niti Mandala Renon
+              persisnya di Lapangan Puputan Renon.</p>
+            <p>Monumen ini dikenal dengan nama "Bajra Sandhi" karena bentuknya menyerupai bajra atau genta yang
+              digunakan oleh para Pendeta Hindu dalam mengucapkan Weda (mantra) pada saat upacara keagamaan. Monumen ini
+              dibangun pada tahun 1987, diresmikan oleh Presiden Megawati Sukarno Putri pada tanggal 14 Juni 2003.
+              Tujuan pembangunan monumen ini adalah untuk mengabadikan jiwa dan semangat perjuangan rakyat Bali,
+              sekaligus menggali, memelihara, mengembangkan serta melestarikan budaya Bali untuk diwariskan kepada
+              generasi penerus sebagai modal melangkah maju menapak dunia yang semakin sarat dengan tantangan dan
+              hambatan.</p>
+            <br>
+            <figcaption class="blockquote-footer">
+              Sumber: <cite title="Source Title">https://id.wikipedia.org/wiki/Monumen_Bajra_Sandhi</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="wisata2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="wisata2Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="wisata2Label">Lapangan Puputan Margarana Renon</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/wisata2.jpg" title="Lapangan Puputan Margarana Renon" class="img-fluid">
+            <hr>
+            <p>Tempat wisata sejarah di bali yang satu ini merupakan sebuah tempat yang juga cukup bersejarah di kawasan
+              bali. Tempat yang berada di daerah Denpasar ini memang merupakan sebuah tempat kebanggaan masyarakat Bali.
+              Lokasi ini sering sekali di kunjungi oleh mereka yang ingin menghabiskan waktu. Ada banyak sekali kegiatan
+              yang bisa kita lakukan di lokasi ini, setiap kegiatan tersebut pastinya akan sangat menarik untuk
+              dilakukan.</p>
+            <p>Lapangan ini sendiri dibangun pada tahun 1983, namun baru diresmikan pada tahun 2003. Tujuan dari
+              dibangunnya lapangan ini adalah untuk mengenang jasa para pahlawan yang tekah gugur dalam melawan
+              penjajah. Selain itu lokasi ini juga sering menjadi destinasi aktifitas masyarakat bali. Ada banyak sekali
+              aktifitas yang dapat dilakukan di lapangan ini, kita bisa saja duduk santai sambil melihat orang-orang
+              yang sedang melakukan aktifitasnya masing-masing.</p>
+            <p>Namun, kita juga bisa ikut beraktifitas dengan berolahraga di tempat ini. Lapangan ini sendiri
+              menyediakan sebuah jogging track yang bisa dimanfaatkan oleh banyak orang. Jadi tak perlu khawatir kalian
+              akan kehabisan ide untuk melakukan berbagai kegiatan. Lapangan ini sendiri bisa dikatakan merupakan salah
+              satu destinasi wisata budaya di Bali yang cukup menarik untuk di kunjugi. Pasalnya terkadang di lokasi ini
+              sering diadakan pertunjukan seni budaya bali.</p>
+            <br>
+            <figcaption class="blockquote-footer">
+              Sumber: <cite title="Source Title">https://denpasarkota.go.id/datangkunjungi/baca/1066</cite>
+            </figcaption>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- End Objek Wisata -->
+
+    <!-- Footer -->
+  </div>
+  <img src="./image/wave-blue3.svg" class="card-img-top" alt="...">
+  <footer class="text-white text-center" style="background-color:#3864AC;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <p>Copyright @2021 Creative Web Design</p>
+        </div>
+        <div class="col-md-4">
+          <ul style="text-align:left;" class="list-unstyled">
+            <li>
+              <a href="index.html" class="text-light text-decoration-none">Home</a>
+            </li>
+            <li>
+              <a href="#objek_wisata" class="text-light text-decoration-none">Objek Wisata</a>
+            </li>
+            <li>
+              <a href="sarana_akomodasi.html" class="text-light text-decoration-none">Sarana dan Akomodasi</a>
+            </li>
+            <li>
+              <a href="wawasan.html" class="text-light text-decoration-none">Wawasan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>PT Web Desain Perkasa</h4>
+          <p>Menjadikan masalah menjadi solusi</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
